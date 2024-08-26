@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #d33433;
+    --text-color: #2d2d2d;
+    --white-color: #ffffff;
+    --shadow-color: #2d2d2d72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Jost";
+    
+}
+
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.my5{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    height: 40px;
+}
+
+.nav_bar>li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav_bar>li>a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+.hero_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avater {
+    width: 450px;
+    height: auto;
+}
+
+.sub_heading {
+    font-family: 32px;
+    font-weight: 400;
+}
+
+.main_heading {
+    font-family: 44px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.description {
+    font: 24px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 2px;
+    color: var(--white-color);
+    font-weight: 500;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.btn>a {
+    color: var(--white-color);
+}
+
+
+header {
+    background-image: url('./img/header-bg.png');
+    
+}
+
+
+.biography{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: row-reverse;
+    column-gap: 200px;
+    background-image: url(./img/biography-bg.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.work-img{
+    width: 100%;
+}
+.project_img_container{
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+   gap: 10px;
+   
+}
+.project_img_container>div{
+    border: 1px solid var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px var(--shadow-color);
+    cursor: pointer;
+    
+    
+}
+.recent_work_area{
+    background-image: url(./img/biography-bg.png);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.conact_section{
+    background-color: var(--primary-color);
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.conact_section div{
+    
+    text-align: center;
+
+}
+
+.conact_me{
+    color: var(--white-color);
+}
+
+h4{
+    color: var(--white-color);
+    text-align: center;
+}
+
+footer{
+    padding: 5px 0px;
+    margin-top: 25px 0;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: var(--shadow-color);
+}
+
+
+/* @media only screen and(max-width: 1140px)
+body{
+    grid-template-columns: repeat(3,1fr)
+} */
+
